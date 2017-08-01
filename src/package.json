@@ -1,0 +1,34 @@
+{
+  "name": "node-es6",
+  "version": "1.0.0",
+  "description": "Node.js with Es6",
+  "main": "dist/src/index.js",
+  "directories": {
+    "lib": "src"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "up": "cd /work/app && npm install && npm start",
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "start": "babel-watch -L src/index -w src/ ",
+    "mocha": "mocha test/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-node6": "^11.0.0",
+    "babel-watch": "^2.0.6",
+    "eslint": "^3.17.1",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {}
+}
