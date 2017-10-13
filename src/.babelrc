@@ -1,7 +1,13 @@
 {
-  "presets": ["node6"],
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
   "plugins": [
-    ["transform-async-to-generator", "transform-object-rest-spread"],
+    ["babel-plugin-transform-object-rest-spread"],
     ["module-resolver", {
       "root": ["./src", "./src/modules"],
       "alias": {
