@@ -2,7 +2,7 @@ version: '2'
 services:
 
   app:
-    image: chrisgarrett/node-dev:6.9.1
+    image: chrisgarrett/node-dev:10.9.0
     command: npm run up
     ports:
     - 3000:3000

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "up": "yarn install && npm run start",
     "start": "babel-watch src/index.js",
     "test": "cross-env NODE_ENV=test ./node_modules/.bin/mocha --timeout 90000 --watch --require babel-polyfill --compilers js:babel-register src/**/*test.js --reporter spec||exit 0"
   },
